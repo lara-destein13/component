@@ -7,7 +7,7 @@ class Number extends Component {
   //-----------------------------------------------------------------------------------------------
   constructor(props) {
     super(props);
-    console.log(constructor);
+    console.log(JSON.stringify(props));
   }
 
   //-----------------------------------------------------------------------------------------------
@@ -16,7 +16,7 @@ class Number extends Component {
   render() {
 
     return (
-        <div className="Number">Hello</div>
+        <div className="Number">{this.props.digit}</div>
     );
   }
 };

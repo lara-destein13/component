@@ -13,7 +13,8 @@ class App extends Component {
     console.log("app render");
     return (
       <div className="App">
-        <Number></Number>
+        <Number digit="5"></Number>
+        <Number digit="5"></Number>
       </div>
     );
   };
