@@ -1,6 +1,7 @@
 import './App.css';
 import React, { Component } from 'react';
 import Number from './Number';
+import Iterate from './Iterate';
 
 class App extends Component {
 
@@ -14,7 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         <Number digit="5"></Number>
-        <Number digit="5"></Number>
+        <Iterate></Iterate>
       </div>
     );
   };
