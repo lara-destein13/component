@@ -10,7 +10,6 @@ class Iterate extends Component {
 
 
     renderString(takeAString) {
-        console.log("renderString");
         return(
             <div>{takeAString}</div>
         );
