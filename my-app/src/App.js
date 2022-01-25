@@ -12,10 +12,11 @@ class App extends Component {
 
   render() {
     console.log("app render");
+    const array = ["grape", "orange", "banana"];
     return (
       <div className="App">
         <Number digit="5"></Number>
-        <Iterate></Iterate>
+        <Iterate array={array}></Iterate>
       </div>
     );
   };

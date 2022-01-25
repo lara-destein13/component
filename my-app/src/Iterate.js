@@ -9,11 +9,23 @@ class Iterate extends Component {
     }
 
 
-render() {
-    return (
-        <div>Iterate</div>
-    );
-}
+    renderString(takeAString) {
+        console.log("renderString");
+        return(
+            <div>{takeAString}</div>
+        );
+    }
+
+    render() {
+        const props = this.props;
+        const array = props.array;
+    
+        return (
+            <div>
+                {array.map((str) => this.renderString(str))}
+            </div>
+        );
+    }    
 };
 
 export default Iterate;
