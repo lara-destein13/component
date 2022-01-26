@@ -7,13 +7,21 @@ class Text extends Component {
         super(props);
     }
 
+    clickHandler() {
+        console.log("something got clicked");
+    }
+
     render() {
          return (
-            <div className="text">{this.props.string}</div>
+            <div className="text">
+                <button onClick = {this.clickHandler}>submit</button>
+            </div>
         );
     }    
 };
 
 
 export default Text;
+
+
 
